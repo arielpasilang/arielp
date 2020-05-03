@@ -1,0 +1,81 @@
+.about {
+	max-width: 960px;
+	margin: 0 auto;
+	color: #ddd;
+	padding: 100px 0;
+	position: relative;
+}
+.about p {
+	margin-top: 40px;
+}
+
+.about nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+}
+
+.about ul,
+.about li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.about ul {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: -70px;
+}
+
+.about li {
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 300px;
+	height: 300px;
+}
+
+.about .background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	background: #fff;
+}
+
+.about .refresh {
+	padding: 10px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.photos {
+	height: 800px;
+	display: relative;
+}
+.about .circle {
+	height: 1105px !important;
+}
+.pics {
+	width: 300px;
+	height: 300px;
+}
+
+@media only screen and (min-width: 992px) {
+	.about {
+		z-index: 1;
+	}
+}

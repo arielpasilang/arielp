@@ -5,16 +5,54 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import { motion } from "framer-motion"
+import { Col, Row } from "reactstrap"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="home">
+      <Row>
+        <Col md={3}>
+          <motion.div
+            animate={{ scale: 2 }}
+            transition={{ duration: 0.5 }}
+            style={{
+              maxWidth: `100px`,
+              height: "100px",
+              background: "transparent",
+              marginTop: "60px",
+              marginRight: "40px"
+            }}
+          >
+            <div className="img">
+              <Image imgStyle={{ borderRadius: "20px" }} />
+            </div>
+          </motion.div>
+        </Col>
+        <Col md={9}>
+          <h1>
+            <span style={{ fontWeight: "bold" }}>Hi there!</span> I'm Ariel
+          </h1>
+          <h5>React/Gatsby Developer based from Cebu, Philippines.</h5>
+          <p>
+            My goal is to deliver websites that are optimized, SEO-Oriented
+            pages, desktop/mobile responsive, and custom based on client's
+            request.
+          </p>
+
+          <p>
+            On a normal weekdays, I work as a full-time independent contractor
+            via upwork focusing on creating web application websites that uses
+            the latest technologies such as ReactJS, GatsbyJS, Apollo GraphQL
+            integration for both apollo server and client. <br /> <br />I also
+            make sure to have a spare time for reading, learning new
+            technologies, reading world economy updates, analyzing and creating
+            stock market charts, and taking online courses.
+          </p>
+        </Col>
+      </Row>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
