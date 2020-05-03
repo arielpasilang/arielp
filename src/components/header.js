@@ -37,7 +37,6 @@ const Header = ({ siteTitle }) => {
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        style={{ zIndex: isOpen ? "2" : "10" }}
       >
         <motion.div className="background" variants={sidebar} />
         <Navigation />

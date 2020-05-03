@@ -28,22 +28,20 @@ const Layout = ({ children }) => {
     <>
       <div className="area">
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
-          {children}
+        <main>{children}</main>
 
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </main>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
 
         <footer style={{ textAlign: "center" }}>
           Copyright © {new Date().getFullYear()}, Ariel. Built with Gatsby and

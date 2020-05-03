@@ -17,13 +17,7 @@ const IndexPage = () => (
           <motion.div
             animate={{ scale: 2 }}
             transition={{ duration: 0.5 }}
-            style={{
-              maxWidth: `100px`,
-              height: "100px",
-              background: "transparent",
-              marginTop: "60px",
-              marginRight: "40px"
-            }}
+            className="main-picture"
           >
             <div className="img">
               <Image imgStyle={{ borderRadius: "20px" }} />
@@ -31,25 +25,27 @@ const IndexPage = () => (
           </motion.div>
         </Col>
         <Col md={9}>
-          <h1>
-            <span style={{ fontWeight: "bold" }}>Hi there!</span> I'm Ariel
-          </h1>
-          <h5>React/Gatsby Developer based from Cebu, Philippines.</h5>
-          <p>
-            My goal is to deliver websites that are optimized, SEO-Oriented
-            pages, desktop/mobile responsive, and custom based on client's
-            request.
-          </p>
+          <div className="mt-5">
+            <h1>
+              <span style={{ fontWeight: "bold" }}>Hi there!</span> I'm Ariel
+            </h1>
+            <h5>React/Gatsby Developer based from Cebu, Philippines.</h5>
+            <p>
+              My goal is to deliver websites that are optimized, SEO-Oriented
+              pages, desktop/mobile responsive, and custom based on client's
+              request.
+            </p>
 
-          <p>
-            On a normal weekdays, I work as a full-time independent contractor
-            via upwork focusing on creating web application websites that uses
-            the latest technologies such as ReactJS, GatsbyJS, Apollo GraphQL
-            integration for both apollo server and client. <br /> <br />I also
-            make sure to have a spare time for reading, learning new
-            technologies, reading world economy updates, analyzing and creating
-            stock market charts, and taking online courses.
-          </p>
+            <p>
+              On a normal weekdays, I work as a full-time independent contractor
+              via upwork focusing on creating web application websites that uses
+              the latest technologies such as ReactJS, GatsbyJS, Apollo GraphQL
+              integration for both apollo server and client. <br /> <br />I also
+              make sure to have a spare time for reading, learning new
+              technologies, reading world economy updates, analyzing and
+              creating stock market charts, and taking online courses.
+            </p>
+          </div>{" "}
         </Col>
       </Row>
     </div>

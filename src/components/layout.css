@@ -619,7 +619,6 @@ pre tt:after {
 }
 
 body {
-  width: 100vw;
   box-sizing: border-box;
   background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
   overflow: hidden;
@@ -723,7 +722,6 @@ li {
 
 .area {
   width: 100%;
-  height: 100vh;
 }
 
 .circles {
@@ -839,18 +837,47 @@ li {
   max-width: 960px;
   margin: 0 auto;
   color: #ddd;
-  padding: 20px 0;
-  margin-top: 200px;
+  padding: 100px 20px;
 }
 .home p {
   margin-top: 40px;
-  max-width: 550px;
+  max-width: 650px;
 }
 footer {
   color: #fff;
 }
+
+.main-picture {
+  max-width: 100px;
+  height: 100px;
+  background: transparent;
+  margin-top: 100px;
+  margin: 0 auto;
+  transform: scale(1.5) translateZ(0px) !important;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+  .home {
+    margin-top: 200px;
+    padding: 20px 0;
+  }
+  .main-picture {
+    max-width: 100px;
+    height: 100px;
+    background: transparent;
+    margin-top: 60px;
+    margin-right: 40px;
+  }
+  .area {
+    height: 100vh;
   }
 }
